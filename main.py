@@ -1,7 +1,5 @@
 import datetime
-
 import entities
-
 
 def execute():
     # an example
@@ -9,8 +7,6 @@ def execute():
     ce1.is_deleted = True
     ce2 = entities.Event(start_date=datetime.date.today(), name="event2", link="link2")
     put_input(ce1, ce2, "event")
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
 
 # checks whether an object was deleted physically
 def is_object_delete(old,new) :
@@ -36,8 +32,7 @@ def is_blacklisted(old,new) :
 def is_crawler_status_changed(old,new) :
     return new.crawling_status == CRAWLING_STATUSES.TEXT_ANALYZED or new.crawling_status == CRAWLING_STATUSES.TEXT_UPLOADED
 
-
-
+# the input function
 def put_input(original_entity_obj, entity_obj, string_type):
     rule_list = rules()[string_type]
     for func in rule_list:
