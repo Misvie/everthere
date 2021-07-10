@@ -8,7 +8,7 @@ About my solution :
 
 2.Every type of object has a list of notification rules - an array of method which should idicate whether a notification should take place.
 
-3.There q43 test at the method execute() for each notificiation method, each done by different kind of entity.
+3.There are test at the method execute() for each notificiation method, each done by different kind of entity.
 
 4.There is a made up entity called "David" which elaborates the idea of adding new entities, for David, I've added a new set of rules, from exitising rules.
 
