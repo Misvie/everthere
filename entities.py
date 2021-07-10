@@ -9,7 +9,8 @@ ENTITY_TYPES = [
     "ContentItem",
     "CompanyForEvent",
     "CompanyForWebinar",
-    "CompanyCompetitor"
+    "CompanyCompetitor",
+    "David" #Added new entity type
 ]
 
 
@@ -131,3 +132,12 @@ class CompanyCompetitor:
         self.company = company
         self.competitor = competitor
         self.is_deleted = is_deleted
+
+class David(CrawlableEntity):
+    snippet: Optional[str]
+    company: Company
+
+    def __init__(self, company, snippet=None, **kwargs):
+        super().__init__(**kwargs)
+        self.company = company
+        self.snippet = snippet
