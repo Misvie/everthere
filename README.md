@@ -4,11 +4,16 @@ Just wanted to let you know that I finished this assignment, took almost 3.5-4ho
 
 About my solution :
 1.Each notification reason has a notification method, i.e. - notification for a new object has a method called : is_object_new(), all of these methods gets two parameter, new entity and old entity.
+
 2.Every type of object has a list of notification rules - an array of method which should idicate whether a notification should take place.
+
 3.There is a test at the method execute() for each notificiation method, each done by different kind of entity.
+
 4.There is a made up entity called "David" which elaborates the idea of adding new entities, for David, I've added a new set of rules, from exitising rules.
+
 5.The method put_input() is the method which was required to implement, it takes and old and new entity, along with entity type string.
 
+David
 
 
 # Hi Sofi
