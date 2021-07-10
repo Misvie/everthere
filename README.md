@@ -3,6 +3,7 @@
 Just wanted to let you know that I finished this assignment, took almost 3.5-4hours. 
 
 About my solution :
+
 1.Each notification reason has a notification method, i.e. - notification for a new object has a method called : is_object_new(), all of these methods gets two parameter, new entity and old entity.
 
 2.Every type of object has a list of notification rules - an array of method which should idicate whether a notification should take place.
